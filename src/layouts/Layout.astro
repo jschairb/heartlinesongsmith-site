@@ -23,8 +23,8 @@ const resolvedImageWithDomain = new URL(
 const { title, lang = null } = Astro.props;
 
 const makeTitle = title
-	? `${title} | Astros`
-	: "Astros - Starter Template for Astro with Tailwind CSS";
+	? `${title} | Heartline Songsmith`
+	: "Heartline Songsmith - Your Story, Your Song. In Hours.";
 ---
 
 <!doctype html>
@@ -44,17 +44,17 @@ const makeTitle = title
 
 		<SEO
 			title={makeTitle}
-			description="Astros is a starter website template for Astro built with TailwindCSS and alpine js."
+			description="Turn your inside jokes, memories, and one-of-a-kind stories into a custom, radio-quality song and personalized music video—delivered in hours."
 			canonical={canonicalURL}
 			openGraph={{
 				basic: {
 					url: canonicalURL,
 					type: "website",
-					title: `Astros - Starter Template for Astro`,
+					title: `Heartline Songsmith - Your Story, Your Song. In Hours.`,
 					image: resolvedImageWithDomain,
 				},
 				image: {
-					alt: "Astros Homepage Screenshot",
+					alt: "Heartline Songsmith - Custom Songs and Music Videos",
 				},
 			}}
 		/>
