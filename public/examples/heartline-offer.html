@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heartline Songsmith | Your Story, Your Song. In Hours.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Dark Gray from Astro's template */
+            color: #E5E7EB; /* Light gray text */
+        }
+        .font-lora {
+            font-family: 'Lora', serif;
+        }
+        .btn {
+            @apply inline-block px-8 py-4 text-lg font-bold text-white transition-transform duration-300 rounded-md shadow-lg hover:scale-105;
+        }
+        .btn-primary {
+            @apply bg-red-600 hover:bg-red-700; /* Using the red from the logo */
+        }
+        .btn-secondary {
+            @apply bg-gray-700 hover:bg-gray-600;
+        }
+        h2 {
+            @apply text-4xl font-bold font-lora text-white mb-4;
+        }
+        .section-subtitle {
+            @apply text-xl text-gray-400 max-w-3xl mx-auto;
+        }
+        .feature-card {
+            @apply bg-gray-800 p-8 rounded-lg border border-gray-700;
+        }
+    </style>
+</head>
+<body class="text-gray-300">
+
+    <!-- Header/Nav -->
+    <header class="absolute top-0 left-0 w-full z-10 py-6">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center">
+                 <!-- Mini Logo -->
+                <svg class="h-8 w-8 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12.5h8"/>
+                </svg>
+                <span class="text-2xl font-bold text-white font-lora">Heartline Songsmith</span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#process" class="hover:text-red-500 transition-colors">How It Works</a>
+                <a href="#what-you-get" class="hover:text-red-500 transition-colors">What You Get</a>
+                <a href="#faq" class="hover:text-red-500 transition-colors">FAQ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative pt-32 pb-20 text-center">
+            <div class="container mx-auto px-6">
+                <img src="https://greatwestern.productions/assets/heartline-hero.jpg" alt="Heartline Songsmith Logo" class="w-48 h-48 mx-auto mb-8 rounded-full shadow-2xl">
+                <h1 class="text-5xl md:text-7xl font-extrabold font-lora leading-tight mb-4 text-white">The Unforgettable Last-Minute Gift</h1>
+                <p class="text-2xl md:text-3xl font-lora text-red-400 mb-8">Your Story, Your Song. Delivered in Hours.</p>
+                <p class="section-subtitle mb-12">
+                    Forget flowers that wilt and cards that get tossed. We turn your inside jokes, memories, and one-of-a-kind stories into a custom, radio-quality song and a personalized music video—fast.
+                </p>
+                <a href="#start" class="btn btn-primary text-xl">Create Your Song Now</a>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="feature-card">
+                        <h3 class="text-2xl font-bold mb-4 text-white">Lightning Fast Delivery</h3>
+                        <p class="text-gray-400">Our AI-assisted workflow means you can go from idea to finished song and video in less than a day. Perfect for the anniversary or birthday you *almost* forgot.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3 class="text-2xl font-bold mb-4 text-white">Radically Personal</h3>
+                        <p class="text-gray-400">This isn't a generic template. Our system helps you tell your unique story, and our artists craft it into a professional track that could only be for them.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3 class="text-2xl font-bold mb-4 text-white">A Forever Keepsake</h3>
+                        <p class="text-gray-400">You don’t just get an MP3. You get a "Heartline Hits on GWPTV" Premier Vid—a personalized music video you can share and relive forever.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="py-20 bg-gray-900" id="process">
+            <div class="container mx-auto px-6 text-center">
+                <h2>A Modern Process for a Personal Gift</h2>
+                <p class="section-subtitle mb-16">We've combined a simple, fun creative brief with powerful AI and real artistic talent to make something magical, fast.</p>
+                <div class="relative grid md:grid-cols-3 gap-8">
+                    <!-- The connecting line -->
+                    <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-gray-700" style="transform: translateY(-50%);"></div>
+                    
+                    <!-- Step 1 -->
+                    <div class="relative z-10 feature-card text-center">
+                        <div class="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 bg-red-600 text-white font-bold text-2xl rounded-full flex items-center justify-center border-4 border-gray-900">1</div>
+                        <h3 class="text-2xl font-bold mt-8 mb-4 text-white">Tell Your Story</h3>
+                        <p class="text-gray-400">Fill out our smart Intake Form. It's a fun, guided process that takes minutes and captures the key details, mood, and genre for your song.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="relative z-10 feature-card text-center">
+                        <div class="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 bg-red-600 text-white font-bold text-2xl rounded-full flex items-center justify-center border-4 border-gray-900">2</div>
+                        <h3 class="text-2xl font-bold mt-8 mb-4 text-white">Approve the Vision</h3>
+                        <p class="text-gray-400">Moments later, you'll receive a "Track Vision" PDF. It includes a creative summary and a draft of the lyrics so you can be sure we've nailed the direction.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="relative z-10 feature-card text-center">
+                        <div class="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 bg-red-600 text-white font-bold text-2xl rounded-full flex items-center justify-center border-4 border-gray-900">3</div>
+                        <h3 class="text-2xl font-bold mt-8 mb-4 text-white">Get Your Hit Song & Vid</h3>
+                        <p class="text-gray-400">Once approved, our artists record the song and our automated system generates your custom 'Premier Vid,' ready to share in hours.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- What You Get Section -->
+        <section class="py-20" id="what-you-get">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                     <!-- Placeholder for Premier Vid -->
+                    <div class="bg-gray-800 border border-gray-700 rounded-lg p-4 shadow-2xl">
+                        <div class="aspect-video bg-black rounded flex items-center justify-center">
+                            <div class="text-center">
+                                <p class="font-lora text-2xl text-red-500">Heartline Hits on GWPTV</p>
+                                <p class="text-gray-400">Your Premier Vid Will Appear Here</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-600 mx-auto mt-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" /></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-white">More Than a Song. It's a Moment.</h2>
+                    <p class="section-subtitle !text-left !mx-0 mb-8">Every Heartline Songsmith order is a complete, shareable experience, delivered digitally for instant gifting.</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="text-red-500 mr-3 mt-1">✔</span>
+                            <div>
+                                <h4 class="font-bold text-white text-xl">Broadcast-Quality Custom Song</h4>
+                                <p class="text-gray-400">A professionally written, recorded, and mastered track based on your story. Delivered as a high-quality MP3 & WAV file.</p>
+                            </div>
+                        </li>
+                         <li class="flex items-start">
+                            <span class="text-red-500 mr-3 mt-1">✔</span>
+                            <div>
+                                <h4 class="font-bold text-white text-xl">The 'Premier Vid' Experience</h4>
+                                <p class="text-gray-400">A personalized music video featuring an intro from a GWPTV VJ host, a summary of your song's creative vision, and a full, dynamic lyric video.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="py-20 bg-gray-900" id="start">
+            <div class="container mx-auto px-6 text-center max-w-3xl">
+                <h2 class="font-lora">Ready to Become a Gifting Legend?</h2>
+                <p class="section-subtitle mb-10">Your story is waiting for its soundtrack. The process is fast, the result is timeless. Let's make something unforgettable.</p>
+                <a href="#" class="btn btn-primary text-xl">Start Your Song Intake Form</a>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-20" id="faq">
+            <div class="container mx-auto px-6 max-w-3xl">
+                 <div class="text-center mb-12">
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+                <div class="space-y-6">
+                    <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                        <h4 class="font-bold text-xl mb-2 text-white">How can you create a song so fast?</h4>
+                        <p class="text-gray-400">Our secret is a "human-in-the-loop" system. We use AI to accelerate the administrative and drafting steps—like creating your Track Vision—which allows our human artists to focus exclusively on what they do best: making incredible music.</p>
+                    </div>
+                     <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                        <h4 class="font-bold text-xl mb-2 text-white">What is the "Premier Vid"?</h4>
+                        <p class="text-gray-400">It's a personalized music video experience! Our automated system creates a video that feels like an MTV-style world premiere, featuring a VJ host that matches your song's genre, a peek behind the creative curtain, and a full lyric video so you can sing along.</p>
+                    </div>
+                     <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                        <h4 class="font-bold text-xl mb-2 text-white">Do I get to give feedback?</h4>
+                        <p class="text-gray-400">Yes! The "Track Vision" document is your chance to make sure we've captured the lyrical direction and overall vibe perfectly. Once you approve it, our team gets to work on the final production.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-gray-800 py-12">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <p class="font-lora text-2xl mb-2 text-gray-300">Heartline Songsmith</p>
+            <p class="text-red-500">A Division of Rodeo Reverb Records</p>
+            <p class="mt-4 text-sm">&copy; 2025 Great Western Productions. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+

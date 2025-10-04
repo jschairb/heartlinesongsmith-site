@@ -1,43 +1,136 @@
 {
 	"hero": {
-		"title": "Supercharged web development!",
-		"subtitle": "Unleashing the Power of the Web: Combines Astro, Tailwind CSS and Alpine.js to Streamline Your Web Development Process.",
-		"globe_title": "Craft Stunning, High-Performance Websites with Ease and Speed",
-		"main_button_text": "Download on github",
-		"secondary_button_text": "Go to animated version"
+		"title": "The Unforgettable Last-Minute Gift",
+		"subtitle": "Your Story, Your Song. Delivered in Hours.",
+		"globe_title": "Forget flowers that wilt and cards that get tossed",
+		"description": "Forget flowers that wilt and cards that get tossed. We turn your inside jokes, memories, and one-of-a-kind stories into a custom, radio-quality song and a personalized music video—fast.",
+		"main_button_text": "Create Your Song Now",
+		"secondary_button_text": "See How It Works"
 	},
 	"hero_animated": {
 		"secondary_button_text": "Go to base version"
 	},
 	"header": {
-		"features": "Features",
+		"how_it_works": "How It Works",
+		"what_you_get": "What You Get",
 		"pricing": "Pricing",
-		"blog": "Blog",
-		"contact": "Contacts",
-		"primary_button_text": "Download",
+		"faq": "FAQ",
+		"primary_button_text": "Start Your Song",
 		"secondary_button_text": "Login"
 	},
 	"features": {
+		"title": "Why Heartline Songsmith?",
+		"subtitle": "The perfect gift, delivered at the speed of inspiration",
+		"description": "We turn your inside jokes, memories, and one-of-a-kind stories into a custom, radio-quality song and a personalized music video—fast.",
 		"learn_more": "Learn more",
-		"title": "Features",
-		"subtitle": "All the tools you need",
-		"description": "Astro is a high-performance static site builder that seamlessly integrates with Tailwind CSS and Alpine.js. It allows you to build websites with ease and speed, without sacrificing on performance.",
-		"astro": "Astro is the all-in-one web framework designed for speed. Pull your content from anywhere and deploy everywhere, all powered by your favorite UI components and libraries.",
-		"alpine": "Alpine is a rugged, minimal tool for composing behavior directly in your markup. Think of it like jQuery for the modern web. Plop in a script tag and get going.",
-		"tailwind": "A utility-first CSS framework packed with classes that can be composed to build any design, directly in your markup.",
-		"localization": "An astro integration of i18next + some utility components to help you translate your astro websites!",
-		"light_dark_mode": "Light/Dark mode based on tailwind classes",
-		"giscus": "A comments system powered by GitHub Discussions. Let visitors leave comments and reactions on your website via GitHub!",
-		"decapcms": "Open source content management for your Git workflow",
-		"rss": "RSS generated using @astrojs/rss",
-		"articlegenerator": "Use AI to generate your articles posts"
+		"lightning_fast": {
+			"title": "Lightning Fast Delivery",
+			"description": "Our AI-assisted workflow means you can go from idea to finished song and video in less than a day. Perfect for the anniversary or birthday you *almost* forgot."
+		},
+		"radically_personal": {
+			"title": "Radically Personal",
+			"description": "This isn't a generic template. Our system helps you tell your unique story, and our artists craft it into a professional track that could only be for them."
+		},
+		"forever_keepsake": {
+			"title": "A Forever Keepsake",
+			"description": "You don't just get an MP3. You get a 'Heartline Hits on GWPTV' Premier Vid—a personalized music video you can share and relive forever."
+		}
+	},
+	"process": {
+		"title": "A Modern Process for a Personal Gift",
+		"subtitle": "We've combined a simple, fun creative brief with powerful AI and real artistic talent to make something magical, fast.",
+		"step1": {
+			"title": "Tell Your Story",
+			"description": "Fill out our smart Intake Form. It's a fun, guided process that takes minutes and captures the key details, mood, and genre for your song."
+		},
+		"step2": {
+			"title": "Approve the Vision",
+			"description": "Moments later, you'll receive a 'Track Vision' PDF. It includes a creative summary and a draft of the lyrics so you can be sure we've nailed the direction."
+		},
+		"step3": {
+			"title": "Get Your Hit Song & Vid",
+			"description": "Once approved, our artists record the song and our automated system generates your custom 'Premier Vid,' ready to share in hours."
+		}
+	},
+	"what_you_get": {
+		"title": "More Than a Song. It's a Moment.",
+		"subtitle": "Every Heartline Songsmith order is a complete, shareable experience, delivered digitally for instant gifting.",
+		"custom_song": {
+			"title": "Broadcast-Quality Custom Song",
+			"description": "A professionally written, recorded, and mastered track based on your story. Delivered as a high-quality MP3 & WAV file."
+		},
+		"premier_vid": {
+			"title": "The 'Premier Vid' Experience",
+			"description": "A personalized music video featuring an intro from a GWPTV VJ host, a summary of your song's creative vision, and a full, dynamic lyric video."
+		}
+	},
+	"pricing": {
+		"title": "Choose Your Perfect Hit",
+		"subtitle": "From a simple, heartfelt track to a full-blown viral-ready package, find the perfect way to tell your story and create an unforgettable gift.",
+		"digital_single": {
+			"name": "The Digital Single",
+			"price": "$149",
+			"description": "The essential package: your custom song, delivered fast.",
+			"feature1": "Broadcast-Quality Custom Song",
+			"feature2": "'Track Vision' Creative Summary",
+			"feature3": "High-Quality MP3 & WAV Files",
+			"feature4": "Digital Delivery in Hours",
+			"button_text": "Choose The Single"
+		},
+		"premier_hit": {
+			"name": "The Premier Hit",
+			"price": "$199",
+			"badge": "MOST POPULAR",
+			"description": "The complete, all-inclusive custom song and video experience.",
+			"feature1": "Everything in The Digital Single",
+			"feature2": "'Premier Vid' Music Video",
+			"feature3": "Personalized VJ Intro",
+			"feature4": "Dynamic Lyric Video",
+			"button_text": "Create Your Hit Song"
+		},
+		"viral_package": {
+			"name": "The Viral Package",
+			"price": "$249",
+			"description": "Everything you need to make their song a social media smash hit.",
+			"feature1": "Everything in The Premier Hit",
+			"feature2": "Social Media Kit (Clips for Reels, Shorts & Stories)",
+			"feature3": "Instrumental (Karaoke) Version",
+			"button_text": "Choose The Viral Pack"
+		}
+	},
+	"testimonial": {
+		"title": "A Gift That Truly Hit the Mark",
+		"quote": "I completely forgot our anniversary was this week. I filled out the form during my lunch break, and by that evening, I had this incredible song and video. My wife was floored. The VJ intro was hilarious and the song was perfect. I went from zero to hero in less than 8 hours.",
+		"author": "David L., San Francisco, CA"
+	},
+	"cta": {
+		"title": "Ready to Become a Gifting Legend?",
+		"subtitle": "Your story is waiting for its soundtrack. The process is fast, the result is timeless. Let's make something unforgettable.",
+		"button_text": "Start Your Song Intake Form"
 	},
 	"faq": {
-		"title": "Frequently Asked Questions"
+		"title": "Frequently Asked Questions",
+		"question1": {
+			"question": "How can you create a song so fast?",
+			"answer": "Our secret is a 'human-in-the-loop' system. We use AI to accelerate the administrative and drafting steps—like creating your Track Vision—which allows our human artists to focus exclusively on what they do best: making incredible music."
+		},
+		"question2": {
+			"question": "What is the 'Premier Vid'?",
+			"answer": "It's a personalized music video experience! Our automated system creates a video that feels like an MTV-style world premiere, featuring a VJ host that matches your song's genre, a peek behind the creative curtain, and a full lyric video so you can sing along."
+		},
+		"question3": {
+			"question": "Do I get to give feedback?",
+			"answer": "Yes! The 'Track Vision' document is your chance to make sure we've captured the lyrical direction and overall vibe perfectly. Once you approve it, our team gets to work on the final production."
+		}
+	},
+	"footer": {
+		"brand": "Heartline Songsmith",
+		"tagline": "A Division of Rodeo Reverb Records",
+		"copyright": "© 2025 Great Western Productions. All Rights Reserved."
 	},
 	"newsletter": {
-		"title": "Subscribe to our newsletter",
-		"subtitle": "Get notified for all updates",
+		"title": "Stay Updated on New Features",
+		"subtitle": "Get notified when we launch new packages and special offers",
 		"input_placeholder": "Enter your email",
 		"button_text": "Subscribe",
 		"privacy": "We care about the protection of your data. Read our",

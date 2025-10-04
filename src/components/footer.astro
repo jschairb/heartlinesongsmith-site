@@ -60,13 +60,15 @@ import { t } from "i18next";
 		<div class="flex justify-center mt-12 gap-3">
 			<LanguageSelector
 				showFlag={false}
-				languageMapping={{ en: "English", it: "Italiano" }}
+				languageMapping={{ en: "English" }}
 				class="appearance-none py-1 px-2 rounded bg-slate-100 dark:bg-stone-950"
 			/>
 			<ThemeSelector />
 		</div>
 		<div class="mt-4 text-center">
-			<span class="text-sm tracking-wide text-gray-500 dark:text-white">Copyright © Your Company 2023 - Present. All rights reserved</span>
+			<p class="text-2xl font-bold text-gray-700 dark:text-gray-300 mb-2">{t("footer.brand")}</p>
+			<p class="text-red-500 mb-4">{t("footer.tagline")}</p>
+			<span class="text-sm tracking-wide text-gray-500 dark:text-white">{t("footer.copyright")}</span>
 		</div>
 	</div>
 </footer>

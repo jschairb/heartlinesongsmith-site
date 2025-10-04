@@ -4,73 +4,46 @@ import { t } from "i18next";
 
 const faqs = [
 	{
-		title: "What is this?",
-		description: "This is a astro template that uses tailwindcss and alpinejs",
+		title: "How fast is the \"SPEED+\" last-minute delivery?",
+		description: "It's genuinely fast! Our \"SPEED+\" service is designed for those gifting emergencies. Once you submit your story through our intake form, our artists get to work immediately. You can expect to receive your finished, high-quality MP3 song in a matter of hours, typically within 24 hours of your submission. It's the most personal, thoughtful gift you can get at the last minute.",
 	},
 	{
-		title: "Why alpinejs? Why don't just use js?",
-		description:
-			"Alpine js is less than 17kb and it make javascript very fast to write, there are also various open source ready to use components like https://js.hyperui.dev, https://www.alpinetoolbox.com/examples, https://alpinejs.dev/components#components",
-	},
-	{
-		title: "But I don't need alpine js, can I remove it?",
-		description: `Of course, but some components use it and you'll have to edit these, more specifically you ll have to: <br/>
+		title: "What kind of information do I need to provide for my song?",
+		description: `The more details, the better, but you don't need to write a novel! Our intake form will guide you, but think about things like:
 					<ul style="list-style: inside;">
-						<li>First remove the package with the command <code>npm unistall @astrojs/alpinejs @types/alpinejs alpinejs</code></li>
-						<li>Adjust all components that uses alpine js: <code>faq.astro</code>, <code>themeselector.astro</code>, <code>navbar.astro</code></li>
+						<li>The occasion (anniversary, birthday, etc.)</li>
+						<li>Key names, places, or dates.</li>
+						<li>A few cherished memories or funny inside jokes.</li>
+						<li>The overall feeling you're going for (sweet, funny, nostalgic).</li>
+						<li>A few artists or genres you both love (e.g., "something that feels like a 90s country song," or "a simple acoustic vibe like Ed Sheeran").</li>
 					</ul>`,
 	},
 	{
-		title: "Can I remove also tailwidcss?",
-		description:
-			"I mean, you can, but you'll have to basically rewrite all the template, so I don't recommend it",
+		title: "Will I get to approve the lyrics before the song is finished?",
+		description: `That depends on the service you choose!<br/><br/>
+					<strong>Standard Service:</strong> Yes! This is our collaborative option. We'll send you a "Track Vision" with draft lyrics for the main sections for you to approve before we record the final song.<br/><br/>
+					<strong>SPEED+ Service:</strong> To ensure lightning-fast delivery, we bypass the collaborative feedback step. Our talented artists will take your story and run with it, using their expertise to craft the perfect song in one go.`,
 	},
 	{
-		title: "I don't need multiple language, how can I remove it?",
-		description: `One way is to simply keep one language and remove the selector from the footer but in order to fully remove the localization you have to: <br/>
-					<ul style="list-style: inside;">
-						<li>Remove the i18next pacakage <code>npm unistall astro-i18next</code></li>
-						<li>Remove <code>astro-i18next.config.mjs</code> file</li>
-						<li>Remove <code>locales</code> folder from public</li>
-						<li>Remove <code>languageselector.astro</code> file and from footer</li>
-						<li>Find all reference to <code>i18next</code> and <code>astro-i18next</code> and replace with your text</li>
-					</ul>`,
+		title: "What will my song sound like? Can I pick the genre?",
+		description: "You have a lot of input on the sound! In the intake form, you can specify genres, moods, and even reference specific artists you like. Whether you want a simple acoustic ballad, an upbeat pop-rock anthem, or a country story-song, our musicians will tailor the track to fit the vibe you're looking for.",
 	},
 	{
-		title: "I don't need dark mode, how can I remove it?",
-		description:
-			"Dark mode is embedded into tailwindcss, so you can't remove it, but you can remove the switch from the navbar",
+		title: "What do I get with my final order?",
+		description: "Your final delivery includes a professionally mixed and mastered song (approximately 2-3 minutes long) as a high-quality digital download (MP3 and WAV formats). You'll also receive a digital booklet containing the final lyrics, perfect for printing out. Physical formats like CDs and cassettes are available as add-ons but require additional production and shipping time.",
 	},
 	{
-		title:
-			"How can I configure the Sveltia CMS authentication with cloudflare?",
-		description: `To configure Sveltia CMS with cloudflare follow this guide <a href="https://github.com/sveltia/sveltia-cms" target="_blank">https://github.com/sveltia/sveltia-cms</a>`,
+		title: "What if I want to change something after the song is done?",
+		description: "Because each song is a completely custom piece of art, we don't offer revisions on the final delivered track. This is why the \"Track Vision\" approval step is so important in our Standard Service. For SPEED+ orders, trust our artists to capture the essence of your story beautifully on the first take!",
 	},
 	{
-		title: "How can I configure the decap CMS authentication with netlify?",
-		description: `To configure decap CMS with netlify do the followings:
-					<ul style="list-style: inside;">
-						<li>Change NetlifyCMS config <code>config.backend.name</code> to git-gateway</li>
-						<li>Use integrated NetlifyCMS auth <a href="https://decapcms.org/docs/git-gateway-backend/#git-gateway-with-netlify" target="_blank">https://decapcms.org/docs/git-gateway-backend/#git-gateway-with-netlify</a></li>
-					</ul>`,
-	},
-	{
-		title: "How can I change the localization languages?",
-		description: `In order to change the languages you have to change the languages in the file <code>astro-i18next.config.mjs</code> and in the netlifyCMS configuration on the file <code>astro.config.mjs</code> <br/>
-					Then change the locales files folders in <code>public/locales</code>`,
-	},
-	{
-		title: "What are the files in the funciotn folder used for?",
-		description: `These are cloudflare function that are used for the authentication to the decap CMS`,
-	},
-	{
-		title: "The build on cloudflare keep failing, why?",
-		description: `One of the problem could be that the Build system version is setted to version 1, make sure that version 2 is selected`,
+		title: "Can I share my song online or play it at an event?",
+		description: "Absolutely! It's your song. You have full rights to share it on social media, play it at your wedding, anniversary party, or any other private event. If you're interested in a wider, public release, ask us about our add-on to get your song on streaming platforms like Spotify and Apple Music!",
 	},
 ];
 ---
 
-<div class="mx-auto max-w-5xl px-6 py-24 sm:py-36 lg:px-8 lg:py-52 dark:bg-stone-950">
+<div id="faq" class="mx-auto max-w-5xl px-6 py-24 sm:py-36 lg:px-8 lg:py-52 dark:bg-stone-950">
 	<div class="mx-auto divide-y divide-gray-900/10 dark:divide-gray-100/10">
 		<h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900 dark:text-white">{t("faq.title")}</h2>
 		<dl class="mt-10 space-y-6 divide-y divide-gray-900/10 dark:divide-gray-100/10">
