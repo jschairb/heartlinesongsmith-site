@@ -1,0 +1,112 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import CaseStudyHero from "@components/casestudy/CaseStudyHero.astro";
+import CaseStudyContent from "@components/casestudy/CaseStudyContent.astro";
+import CaseStudySidebar from "@components/casestudy/CaseStudySidebar.astro";
+import VideoPitch from "@components/casestudy/VideoPitch.astro";
+import PositioningCard from "@components/casestudy/PositioningCard.astro";
+import ArtistVersatility from "@components/casestudy/ArtistVersatility.astro";
+import { changeLanguage } from "i18next";
+
+changeLanguage("en");
+
+const positioningItems = [
+	{
+		title: "Custom Craftsmanship",
+		description: "We build from your story, focusing on depth and authenticity, not AI-driven volume."
+	},
+	{
+		title: "Narrative Focus",
+		description: "This is more than a song; it's co-creating a personal artifact, a piece of your legacy."
+	},
+	{
+		title: "Genesis to Product",
+		description: "We guide the entire journey from raw idea to a polished, cinematic musical piece you can share and cherish."
+	}
+];
+
+const projects = [
+	"Eddie Lamont & Great Western",
+	"Drift Harper",
+	"Ghost Tourist",
+	"Breeze Bros.",
+	"Ranchos Crucifixion"
+];
+---
+
+<Layout title="Colonel John Case Study">
+	<Container class="!max-w-screen-2xl">
+		<div class="pt-12 pb-8 md:pt-20 md:pb-12">
+			<CaseStudyHero 
+				subtitle="Crafting Personal Legends into Enduring Songs"
+			/>
+
+			<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
+				<CaseStudyContent 
+					title='Case Study: "Colonel John and the Giants"'
+					subtitle="A song of endurance, legacy, and quiet heroism."
+				>
+					<p>"Colonel John and the Giants" began as a personal commission — a song written to honor my college professor, a Vietnam War search-and-rescue pilot whose stories quietly shaped the way I saw courage, teaching, and time.</p>
+					
+					<p>The track became the emotional and thematic anchor of the album: a mythic transformation of a real man into legend. Through rambling, widescreen storytelling, it chronicles Colonel John's hundred missions over the jungle canopy, flying three green helicopters — the "Giants" — through tracer fire and impossible odds to carry the living home.</p>
+					
+					<p>But the song isn't just about war. It's about continuity: how the endurance that saves lives in one era can reappear decades later in the patience of a teacher, the steadiness of a mentor, the simple act of showing up.</p>
+
+					<h3 class="text-2xl font-semibold text-amber-800 dark:text-amber-300 pt-4 !mb-2 font-serif">The Musical Approach</h3>
+					<p>Musically, the piece blends '70s Americana storytelling with cinematic desert rock textures — pedal-steel slides over deep toms, a slow 6/8 sway that mirrors the rhythm of helicopter blades. The arrangement moves between two timeframes:</p>
+					<ul class="list-disc list-outside pl-5 space-y-2">
+						<li>The chaos of combat, where Colonel John's calm voice cuts through rotor noise and gravity's pull.</li>
+						<li>The quiet authority of a classroom, where chalk dust settles like afterburn and hard-won wisdom passes down like embers.</li>
+					</ul>
+					<p>The refrain — "Take life as it comes" — became both lyric and mantra, bridging those worlds. In the end, Colonel John stands as both historical figure and spiritual guide. His West Texas sky becomes a metaphor for vast endurance — the open horizon you keep flying toward when the world demands your courage.</p>
+
+					<div class="border-t border-amber-200 dark:border-amber-800 mt-8 pt-6">
+						<h3 class="text-2xl font-semibold text-amber-800 dark:text-amber-300 !mb-3 font-serif">What This Song Demonstrates</h3>
+						<ul class="space-y-3">
+							<li class="flex items-start gap-3">
+								<svg class="w-5 h-5 min-w-[1.25rem] text-amber-600 dark:text-amber-400 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+								</svg>
+								<span class="flex-1">How personal memory and historical storytelling can merge into something mythic yet grounded.</span>
+							</li>
+							<li class="flex items-start gap-3">
+								<svg class="w-5 h-5 min-w-[1.25rem] text-amber-600 dark:text-amber-400 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+								</svg>
+								<span class="flex-1">The use of Suno-style cinematic composition to translate emotional dualities — chaos and calm, youth and age, fire and dust.</span>
+							</li>
+							<li class="flex items-start gap-3">
+								<svg class="w-5 h-5 min-w-[1.25rem] text-amber-600 dark:text-amber-400 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+								</svg>
+								<span class="flex-1">Heartline Songsmith's process: turning lived experience into enduring narrative, one that honors real people while resonating far beyond their biography.</span>
+							</li>
+						</ul>
+					</div>
+				</CaseStudyContent>
+
+				<CaseStudySidebar>
+					<VideoPitch 
+						title="A Message From The Songsmith"
+						message="This is emotional and narrative alchemy. Unlike other services, I'm not trying to churn out thousands of songs. I am not scaling. I am not optimizing. I am helping YOU bring to life something that is uniquely yours and speaks to your intentions."
+						videoId="F_n6f8XLM74"
+					/>
+
+					<PositioningCard 
+						title="Our Position: The Alchemist's Touch"
+						items={positioningItems}
+					/>
+
+					<ArtistVersatility 
+						title="A Multi-Faceted Artist"
+						description="The craft behind Heartline Songsmith is honed through years of storytelling across diverse musical worlds. My work under other personas has explored everything from dusty Americana to cinematic desert rock and gritty boom-bap."
+						projectsLabel="Past Projects Include:"
+						projects={projects}
+						closingText="This breadth of experience ensures your song will find its unique voice, drawing from a rich palette of narrative and sonic textures."
+					/>
+				</CaseStudySidebar>
+			</div>
+		</div>
+	</Container>
+</Layout>

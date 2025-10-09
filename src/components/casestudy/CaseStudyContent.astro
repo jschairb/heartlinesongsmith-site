@@ -1,0 +1,42 @@
+---
+const { title, subtitle, videoId } = Astro.props;
+---
+
+<main class="lg:col-span-2">
+	<div class="bg-white dark:bg-stone-900 p-8 md:p-10 rounded-lg shadow-lg border border-amber-100 dark:border-amber-900">
+		<h2 class="text-3xl font-bold text-amber-800 dark:text-amber-300 mb-2 font-serif">
+			{title}
+		</h2>
+		<p class="text-xl italic text-gray-600 dark:text-gray-400 mb-6">
+			{subtitle}
+		</p>
+		
+		{videoId ? (
+			<div class="aspect-video mt-4 mb-6">
+				<iframe
+					class="w-full h-full rounded-lg"
+					src={`https://www.youtube.com/embed/${videoId}`}
+					title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen
+				></iframe>
+			</div>
+		) : (
+			<div class="aspect-video mt-4 mb-6 bg-gray-200 dark:bg-gray-700 rounded-lg flex items-center justify-center">
+				<div class="text-center">
+					<svg class="w-20 h-20 text-gray-400 dark:text-gray-500 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+					</svg>
+					<p class="text-gray-500 dark:text-gray-400 font-medium">Video Placeholder</p>
+					<p class="text-gray-400 dark:text-gray-500 text-sm mt-1">Add videoId prop to display YouTube video</p>
+				</div>
+			</div>
+		)}
+		
+		<div class="prose prose-lg max-w-none text-gray-800 dark:text-gray-200 space-y-4">
+			<slot />
+		</div>
+	</div>
+</main>
